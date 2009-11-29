@@ -28,6 +28,9 @@ libfiltersqp_la_LDFLAGS = $(LT_LDFLAGS)
 addlibsdir = $(prefix)/share/doc/coin/ThirdParty/FilterSQP
 addlibs_DATA = filtersqp_addlibs.txt README
 
+pkgconfiglibdir = $(prefix)/lib/ThirdParty/pkgconfig
+pkgconfiglib_DATA = filtersqp.pc
+
 ########################################################################
 #                         Maintainer Stuff                             #
 ########################################################################
