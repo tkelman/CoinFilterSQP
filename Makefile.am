@@ -8,7 +8,7 @@ AUTOMAKE_OPTIONS = foreign
 
 EXTRA_DIST =
 
-thirdpartylibdir = $(prefix)/lib/ThirdParty
+thirdpartylibdir = $(libdir)/coin/ThirdParty
 thirdpartylib_LTLIBRARIES = libfiltersqp.la
 
 libfiltersqp_la_SOURCES = \
@@ -25,11 +25,11 @@ libfiltersqp_la_SOURCES = \
 
 libfiltersqp_la_LDFLAGS = $(LT_LDFLAGS)
 
-addlibsdir = $(prefix)/share/doc/coin/ThirdParty/FilterSQP
+addlibsdir = $(datadir)/coin/doc/ThirdParty/FilterSQP
 addlibs_DATA = filtersqp_addlibs.txt README
 
-pkgconfiglibdir = $(prefix)/lib/ThirdParty/pkgconfig
-pkgconfiglib_DATA = filtersqp.pc
+pkgconfiglibdir = $(libdir)/pkgconfig
+pkgconfiglib_DATA = coinfiltersqp.pc
 
 ########################################################################
 #                         Maintainer Stuff                             #

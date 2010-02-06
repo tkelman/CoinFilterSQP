@@ -57,7 +57,7 @@ AC_COIN_INIT_AUTOMAKE
 # Initialize automake
 AC_COIN_INIT_AUTO_TOOLS
 
-AC_CONFIG_FILES([Makefile filtersqp_addlibs.txt filtersqp.pc filtersqp-uninstalled.pc])
+AC_CONFIG_FILES([Makefile filtersqp_addlibs.txt coinfiltersqp.pc coinfiltersqp-uninstalled.pc])
 
 AC_COIN_FINALIZE
 
