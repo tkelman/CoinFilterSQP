@@ -30,7 +30,7 @@ addlibsdir = $(datadir)/coin/doc/ThirdParty/FilterSQP
 addlibs_DATA = filtersqp_addlibs.txt
 
 filtersqp_addlibs.txt : coinfiltersqp.pc
-	PKG_CONFIG_PATH=.:$(libdir)/pkgconfig:${PKG_CONFIG_PATH} $(PKG_CONFIG) --libs coinfiltersqp > filtersqp_addlibs.txt
+	PKG_CONFIG_PATH=.:@COIN_PKG_CONFIG_PATH@ --libs coinfiltersqp > filtersqp_addlibs.txt
 endif
 
 pkgconfiglibdir = $(libdir)/pkgconfig
